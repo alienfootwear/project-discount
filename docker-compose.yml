@@ -1,0 +1,15 @@
+version: '2'
+services:
+  discount-service:
+    build: api
+    restart: always
+    volumes:
+     - ./api/src:/code
+    ports:
+     - "8888:5000"
+    depends_on:
+     - db
+    environment:
+     - DATABASE_HOST=db
+  db:
+    build: db
