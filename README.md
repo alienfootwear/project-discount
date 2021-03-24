@@ -1,5 +1,7 @@
 # project-discount
 
+This is an example project, unfortunately it is far from being done, but this is how far i got.
+
 
 Build: docker-compose build
 
